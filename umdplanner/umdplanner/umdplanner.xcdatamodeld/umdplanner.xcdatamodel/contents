@@ -13,13 +13,19 @@
         <attribute name="set" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="exercise" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="exerciseRecords" inverseEntity="Exercise" syncable="YES"/>
     </entity>
+    <entity name="Sleep" representedClassName="Sleep" syncable="YES" codeGenerationType="class">
+        <attribute name="duration" optional="YES" syncable="YES"/>
+        <attribute name="sleepTime" optional="YES" syncable="YES"/>
+        <attribute name="upTime" optional="YES" syncable="YES"/>
+    </entity>
     <entity name="Workout" representedClassName="Workout" syncable="YES" codeGenerationType="class">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <relationship name="exercises" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exercise" inverseName="workout" inverseEntity="Exercise" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Exercise" positionX="-471.97265625" positionY="-166.93359375" width="128" height="133"/>
-        <element name="Workout" positionX="-665.6875" positionY="-112.140625" width="128" height="73"/>
+        <element name="Exercise" positionX="-471.97265625" positionY="-166.93359375" width="128" height="135"/>
         <element name="ExerciseRecord" positionX="-248.2578125" positionY="-152.0859375" width="128" height="88"/>
+        <element name="Workout" positionX="-665.6875" positionY="-112.140625" width="128" height="73"/>
+        <element name="Sleep" positionX="-471.8984375" positionY="-7.16015625" width="128" height="88"/>
     </elements>
 </model>

@@ -10,6 +10,10 @@
 		26FDBBFF9369F4949BEFAE2A /* Pods_umdplannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 142921F0D7F1A19E7E856E35 /* Pods_umdplannerTests.framework */; };
 		49E4D87F8DB1785F34600522 /* Pods_umdplanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2764091EBCFFB090C6AC302 /* Pods_umdplanner.framework */; };
 		7AD1E31B26C6DCCDDDF42866 /* Pods_umdplannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9A50337196C9457F074046 /* Pods_umdplannerUITests.framework */; };
+		BE4FEBBB227F8B0B00FC3B9B /* SleepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4FEBBA227F8B0B00FC3B9B /* SleepModel.swift */; };
+		BEA1AAF0227F7C1500B50AE7 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA1AAEF227F7C1500B50AE7 /* Charts.framework */; };
+		BEB8D77A227F740E00F98977 /* SleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB8D779227F740E00F98977 /* SleepView.swift */; };
+		BEB8D77C227F755800F98977 /* SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB8D77B227F755800F98977 /* SleepViewController.swift */; };
 		D7097B7A227261DF001ABA6B /* addExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7097B79227261DF001ABA6B /* addExerciseViewController.swift */; };
 		D7097B7C227261FE001ABA6B /* viewExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7097B7B227261FE001ABA6B /* viewExerciseViewController.swift */; };
 		D7097B7E22727A45001ABA6B /* iOSDropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7097B7D22727A45001ABA6B /* iOSDropDown.framework */; };
@@ -21,7 +25,6 @@
 		D71738C32266A87500BB068C /* FitnessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71738C22266A87500BB068C /* FitnessModel.swift */; };
 		D71BBE3D2271994600E66854 /* exerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71BBE3C2271994600E66854 /* exerciseCell.swift */; };
 		D71F0A8B2273904100D739A4 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F0A8A2273904100D739A4 /* test.swift */; };
-		D723F1DF22718EC700E79DD0 /* workoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D723F1DE22718EC600E79DD0 /* workoutCell.swift */; };
 		D75467A9225FC724009DE38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75467A8225FC724009DE38C /* AppDelegate.swift */; };
 		D75467AE225FC724009DE38C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75467AC225FC724009DE38C /* Main.storyboard */; };
 		D75467B1225FC724009DE38C /* umdplanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D75467AF225FC724009DE38C /* umdplanner.xcdatamodeld */; };
@@ -48,6 +51,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BEA1AAF4227F7D3600B50AE7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		142921F0D7F1A19E7E856E35 /* Pods_umdplannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_umdplannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		159BAB412CE042AEBEC56E2D /* Pods-umdplannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-umdplannerTests.debug.xcconfig"; path = "Target Support Files/Pods-umdplannerTests/Pods-umdplannerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -55,6 +71,11 @@
 		30D2C2A73B1DC65B0216C371 /* Pods-umdplannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-umdplannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-umdplannerUITests/Pods-umdplannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5FB5C2113395D2DB96EE4C4E /* Pods-umdplanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-umdplanner.debug.xcconfig"; path = "Target Support Files/Pods-umdplanner/Pods-umdplanner.debug.xcconfig"; sourceTree = "<group>"; };
 		AC9A50337196C9457F074046 /* Pods_umdplannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_umdplannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE4FEBBA227F8B0B00FC3B9B /* SleepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepModel.swift; sourceTree = "<group>"; };
+		BEA1AAEA227F7AED00B50AE7 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA1AAEF227F7C1500B50AE7 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB8D779227F740E00F98977 /* SleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepView.swift; sourceTree = "<group>"; };
+		BEB8D77B227F755800F98977 /* SleepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepViewController.swift; sourceTree = "<group>"; };
 		C2764091EBCFFB090C6AC302 /* Pods_umdplanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_umdplanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7097B79227261DF001ABA6B /* addExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addExerciseViewController.swift; sourceTree = "<group>"; };
 		D7097B7B227261FE001ABA6B /* viewExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewExerciseViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +88,6 @@
 		D71738C22266A87500BB068C /* FitnessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessModel.swift; sourceTree = "<group>"; };
 		D71BBE3C2271994600E66854 /* exerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exerciseCell.swift; sourceTree = "<group>"; };
 		D71F0A8A2273904100D739A4 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
-		D723F1DE22718EC600E79DD0 /* workoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = workoutCell.swift; path = /Users/robertchoe/code/School/436/umdplanner/umdplanner/umdplanner/Views/workoutCell.swift; sourceTree = "<absolute>"; };
 		D75467A5225FC723009DE38C /* umdplanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = umdplanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75467A8225FC724009DE38C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D75467AD225FC724009DE38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA1AAF0227F7C1500B50AE7 /* Charts.framework in Frameworks */,
 				D7097B7E22727A45001ABA6B /* iOSDropDown.framework in Frameworks */,
 				49E4D87F8DB1785F34600522 /* Pods_umdplanner.framework in Frameworks */,
 			);
@@ -130,6 +151,8 @@
 		8BA594EDD98C72343D71DD7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BEA1AAEF227F7C1500B50AE7 /* Charts.framework */,
+				BEA1AAEA227F7AED00B50AE7 /* Charts.framework */,
 				D7097B7D22727A45001ABA6B /* iOSDropDown.framework */,
 				C2764091EBCFFB090C6AC302 /* Pods_umdplanner.framework */,
 				142921F0D7F1A19E7E856E35 /* Pods_umdplannerTests.framework */,
@@ -144,6 +167,7 @@
 				D71738BE2266A85B00BB068C /* FitnessViewController.swift */,
 				D7097B79227261DF001ABA6B /* addExerciseViewController.swift */,
 				D7097B7B227261FE001ABA6B /* viewExerciseViewController.swift */,
+				BEB8D77B227F755800F98977 /* SleepViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -151,10 +175,10 @@
 		D71738BC2266A83200BB068C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D723F1DE22718EC600E79DD0 /* workoutCell.swift */,
 				D71738C02266A86A00BB068C /* FitnessView.swift */,
 				D71BBE3C2271994600E66854 /* exerciseCell.swift */,
 				D7097B7F22729A2E001ABA6B /*  setCell.swift */,
+				BEB8D779227F740E00F98977 /* SleepView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +189,7 @@
 				D71738C22266A87500BB068C /* FitnessModel.swift */,
 				D7097B872272AB09001ABA6B /* ExerciseType.swift */,
 				D71F0A8A2273904100D739A4 /* test.swift */,
+				BE4FEBBA227F8B0B00FC3B9B /* SleepModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -238,6 +263,7 @@
 				D75467A2225FC723009DE38C /* Frameworks */,
 				D75467A3225FC723009DE38C /* Resources */,
 				837655FF218C4C3BE763D42E /* [CP] Embed Pods Frameworks */,
+				BEA1AAF4227F7D3600B50AE7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -411,12 +437,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-umdplanner/Pods-umdplanner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/iOSDropDown/iOSDropDown.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOSDropDown.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,11 +483,13 @@
 			files = (
 				D71BBE3D2271994600E66854 /* exerciseCell.swift in Sources */,
 				D71F0A8B2273904100D739A4 /* test.swift in Sources */,
+				BEB8D77A227F740E00F98977 /* SleepView.swift in Sources */,
+				BE4FEBBB227F8B0B00FC3B9B /* SleepModel.swift in Sources */,
 				D71738BF2266A85B00BB068C /* FitnessViewController.swift in Sources */,
 				D7097B7A227261DF001ABA6B /* addExerciseViewController.swift in Sources */,
 				D7097B8022729A2E001ABA6B /*  setCell.swift in Sources */,
 				D7097B882272AB09001ABA6B /* ExerciseType.swift in Sources */,
-				D723F1DF22718EC700E79DD0 /* workoutCell.swift in Sources */,
+				BEB8D77C227F755800F98977 /* SleepViewController.swift in Sources */,
 				D75467B1225FC724009DE38C /* umdplanner.xcdatamodeld in Sources */,
 				D75467A9225FC724009DE38C /* AppDelegate.swift in Sources */,
 				D71738C12266A86A00BB068C /* FitnessView.swift in Sources */,

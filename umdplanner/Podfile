@@ -6,6 +6,7 @@ target 'umdplanner' do
   use_frameworks!
   # Pods for umdplanner
   pod 'iOSDropDown'
+  pod 'Charts'
 
   target 'umdplannerTests' do
     inherit! :search_paths

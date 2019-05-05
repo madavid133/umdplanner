@@ -1,16 +1,22 @@
 PODS:
+  - Charts (3.3.0):
+    - Charts/Core (= 3.3.0)
+  - Charts/Core (3.3.0)
   - iOSDropDown (0.2.7)
 
 DEPENDENCIES:
+  - Charts
   - iOSDropDown
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Charts
     - iOSDropDown
 
 SPEC CHECKSUMS:
+  Charts: ec1f57f9340054155691e84d4544a1d239d382c5
   iOSDropDown: 7a4cfc67d5166f319858747b63cd2f7760c4fb4b
 
-PODFILE CHECKSUM: 8fac582c5f69b4327ab1e8c6ed6d138f17d9c2df
+PODFILE CHECKSUM: f87f291fa3abc15fe2be346c5866fa21453693b7
 
 COCOAPODS: 1.6.1
