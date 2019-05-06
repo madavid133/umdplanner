@@ -11,6 +11,7 @@
 		49E4D87F8DB1785F34600522 /* Pods_umdplanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2764091EBCFFB090C6AC302 /* Pods_umdplanner.framework */; };
 		7AD1E31B26C6DCCDDDF42866 /* Pods_umdplannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9A50337196C9457F074046 /* Pods_umdplannerUITests.framework */; };
 		BE4FEBBB227F8B0B00FC3B9B /* SleepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4FEBBA227F8B0B00FC3B9B /* SleepModel.swift */; };
+		BE4FEBBD227FA89B00FC3B9B /* SleepAddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4FEBBC227FA89B00FC3B9B /* SleepAddNewViewController.swift */; };
 		BEA1AAF0227F7C1500B50AE7 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA1AAEF227F7C1500B50AE7 /* Charts.framework */; };
 		BEB8D77A227F740E00F98977 /* SleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB8D779227F740E00F98977 /* SleepView.swift */; };
 		BEB8D77C227F755800F98977 /* SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB8D77B227F755800F98977 /* SleepViewController.swift */; };
@@ -72,6 +73,7 @@
 		5FB5C2113395D2DB96EE4C4E /* Pods-umdplanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-umdplanner.debug.xcconfig"; path = "Target Support Files/Pods-umdplanner/Pods-umdplanner.debug.xcconfig"; sourceTree = "<group>"; };
 		AC9A50337196C9457F074046 /* Pods_umdplannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_umdplannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4FEBBA227F8B0B00FC3B9B /* SleepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepModel.swift; sourceTree = "<group>"; };
+		BE4FEBBC227FA89B00FC3B9B /* SleepAddNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepAddNewViewController.swift; sourceTree = "<group>"; };
 		BEA1AAEA227F7AED00B50AE7 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA1AAEF227F7C1500B50AE7 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB8D779227F740E00F98977 /* SleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepView.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				D7097B79227261DF001ABA6B /* addExerciseViewController.swift */,
 				D7097B7B227261FE001ABA6B /* viewExerciseViewController.swift */,
 				BEB8D77B227F755800F98977 /* SleepViewController.swift */,
+				BE4FEBBC227FA89B00FC3B9B /* SleepAddNewViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				BEB8D77C227F755800F98977 /* SleepViewController.swift in Sources */,
 				D75467B1225FC724009DE38C /* umdplanner.xcdatamodeld in Sources */,
 				D75467A9225FC724009DE38C /* AppDelegate.swift in Sources */,
+				BE4FEBBD227FA89B00FC3B9B /* SleepAddNewViewController.swift in Sources */,
 				D71738C12266A86A00BB068C /* FitnessView.swift in Sources */,
 				D71738C32266A87500BB068C /* FitnessModel.swift in Sources */,
 				D7097B7C227261FE001ABA6B /* viewExerciseViewController.swift in Sources */,

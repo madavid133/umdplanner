@@ -14,9 +14,9 @@
         <relationship name="exercise" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="exerciseRecords" inverseEntity="Exercise" syncable="YES"/>
     </entity>
     <entity name="Sleep" representedClassName="Sleep" syncable="YES" codeGenerationType="class">
-        <attribute name="duration" optional="YES" syncable="YES"/>
-        <attribute name="sleepTime" optional="YES" syncable="YES"/>
-        <attribute name="upTime" optional="YES" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sleepTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="upTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
     </entity>
     <entity name="Workout" representedClassName="Workout" syncable="YES" codeGenerationType="class">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
