@@ -22,9 +22,17 @@ class SleepAddNewViewController: UIViewController {
     @IBOutlet weak var SleepTimePicker: UITextField!
     @IBOutlet weak var UpTimePicker: UITextField!
     @IBOutlet weak var DurationTextField: UILabel!
+    @IBOutlet weak var SleepTitle: UILabel!
+    @IBOutlet weak var UpTitle: UILabel!
+    @IBOutlet weak var DurationTitle: UILabel!
+    @IBOutlet weak var SaveButton: UIButton!
     
     @IBAction func SleepPressed(_ sender: Any) {
         
+    }
+    
+    @IBAction func SavePressed(_ sender: Any) {
+        createData()
     }
     
     override func viewDidLoad() {
@@ -38,6 +46,17 @@ class SleepAddNewViewController: UIViewController {
         toolBar.setItems([doneButton], animated: true)
         SleepTimePicker.inputAccessoryView = toolBar
         UpTimePicker.inputAccessoryView = toolBar
+        
+        self.view.backgroundColor = UIColor(rgb: 0x282C35)
+        SleepTitle.textColor = UIColor(rgb: 0xFFA7C4)
+        UpTitle.textColor = UIColor(rgb: 0xFFA7C4)
+        DurationTitle.textColor = UIColor(rgb: 0xFFA7C4)
+        SleepTimePicker.backgroundColor = UIColor(rgb: 0x424857)
+        SleepTimePicker.textColor = UIColor.white
+        UpTimePicker.backgroundColor = UIColor(rgb: 0x424857)
+        UpTimePicker.textColor = UIColor.white
+        DurationTextField.textColor = UIColor.white
+        SaveButton.setTitleColor(UIColor(rgb: 0xFFA7C4), for: UIControl.State.normal)
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -76,16 +95,61 @@ class SleepAddNewViewController: UIViewController {
     
     func stringFromTimeInterval(interval: TimeInterval) -> String {
         let interval = Int(interval)
-        let seconds = interval % 60
         let minutes = (interval / 60) % 60
         let hours = (interval / 3600)
         return String(format: "%02d hrs %02d min", hours, minutes)
     }
     
     func createData() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        if (sleepTime == nil || upTime == nil || duration == nil || sleepTime! > upTime! || Int(duration!) >= 86400) {
+            let alert = UIAlertController(title: "Invalid Data Entry", message: "Please check your date before saving.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        } else {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            
+            let context = appDelegate.persistentContainer.viewContext
+            let entity = NSEntityDescription.entity(forEntityName: "Sleep", in: context)
+            let newRecord = NSManagedObject(entity: entity!, insertInto: context)
+            
+            newRecord.setValue(Int(duration!), forKey: "duration")
+            newRecord.setValue(sleepTime, forKey: "sleepTime")
+            newRecord.setValue(upTime, forKey: "upTime")
+            
+            do {
+                try context.save()
+                let alert = UIAlertController(title: "Data Entry Saved!", message: "", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                self.present(alert, animated: true)
+            } catch {
+                let alert = UIAlertController(title: "Saving Error", message: "", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                self.present(alert, animated: true)
+                print("Failed saving")
+            }
+        }
+    }
+    
+    @IBAction func ButtonPressed(_ sender: Any) {
+        retrieveData()
+    }
+    
+    func retrieveData() {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
         
-        let managedContext = appDelegate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Sleep")
+        request.returnsObjectsAsFaults = false
+        do {
+            let result = try context.fetch(request)
+            for data in result as! [NSManagedObject] {
+                print("---")
+                print(data.value(forKey: "duration") as! Int)
+                
+            }
+        } catch {
+            print("Failed")
+        }
     }
     
 }

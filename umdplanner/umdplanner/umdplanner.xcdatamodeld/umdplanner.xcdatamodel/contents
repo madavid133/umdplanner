@@ -14,9 +14,13 @@
         <relationship name="exercise" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="exerciseRecords" inverseEntity="Exercise" syncable="YES"/>
     </entity>
     <entity name="Sleep" representedClassName="Sleep" syncable="YES" codeGenerationType="class">
-        <attribute name="duration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="sleepTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="upTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="SleepFlag" representedClassName="SleepFlag" syncable="YES" codeGenerationType="class">
+        <attribute name="flag" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
     </entity>
     <entity name="Workout" representedClassName="Workout" syncable="YES" codeGenerationType="class">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
@@ -25,7 +29,8 @@
     <elements>
         <element name="Exercise" positionX="-471.97265625" positionY="-166.93359375" width="128" height="135"/>
         <element name="ExerciseRecord" positionX="-248.2578125" positionY="-152.0859375" width="128" height="88"/>
+        <element name="Sleep" positionX="-471.8984375" positionY="-7.16015625" width="128" height="90"/>
         <element name="Workout" positionX="-665.6875" positionY="-112.140625" width="128" height="73"/>
-        <element name="Sleep" positionX="-471.8984375" positionY="-7.16015625" width="128" height="88"/>
+        <element name="SleepFlag" positionX="-459" positionY="-63" width="128" height="75"/>
     </elements>
 </model>
