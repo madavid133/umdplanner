@@ -39,6 +39,10 @@ class SleepSummaryViewController: UIViewController {
         AvgSleepTitle.textColor = UIColor(rgb: 0xFFA7C4)
         AvgUpTitle.textColor = UIColor(rgb: 0xFFA7C4)
         AvgDurationTitle.textColor = UIColor(rgb: 0xFFA7C4)
+        AvgSleepTitle.font = UIFont(name: "merriweather-regular", size: 17)
+        AvgUpTitle.font = UIFont(name: "merriweather-regular", size: 17)
+        AvgDurationTitle.font = UIFont(name: "merriweather-regular", size: 17)
+        resetButton.titleLabel?.font = UIFont(name: "merriweather-regular", size: 17)
     }
     
     @IBAction func ResetPressed(_ sender: Any) {

@@ -57,6 +57,11 @@ class SleepAddNewViewController: UIViewController {
         UpTimePicker.textColor = UIColor.white
         DurationTextField.textColor = UIColor.white
         SaveButton.setTitleColor(UIColor(rgb: 0xFFA7C4), for: UIControl.State.normal)
+        SleepTitle.font = UIFont(name: "merriweather-regular", size: 17)
+        UpTitle.font = UIFont(name: "merriweather-regular", size: 17)
+        DurationTitle.font = UIFont(name: "merriweather-regular", size: 17)
+        SaveButton.titleLabel?.font = UIFont(name: "merriweather-regular", size: 17)
+        
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {

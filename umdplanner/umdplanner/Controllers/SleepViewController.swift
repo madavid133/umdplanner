@@ -44,7 +44,12 @@ class SleepViewController: UIViewController {
         
         SleepButton.layer.cornerRadius = 0.5 * SleepButton.bounds.size.width
         SleepButton.clipsToBounds = true
-        SleepButton.setImage(UIImage(named:"sleepButton.jpg"), for: .normal)
+    SleepButton.setImage(UIImage(named:"sleepButton.jpg"), for: .normal)
+        
+        DurationTitle.font = UIFont(name: "Montserrat-Black", size: 17)
+        TimeTitle.font = UIFont(name: "Montserrat-Black", size: 17)
+        ManualButton.titleLabel?.font = UIFont(name: "merriweather-regular", size: 17)
+        SummaryButton.titleLabel?.font = UIFont(name: "merriweather-regular", size: 17)
 //        DurationTitle.font = UIFont(name: "Montserrat", size: 20)
     }
 
@@ -123,7 +128,8 @@ class SleepViewController: UIViewController {
         let rightAxis = SleepTimeChartView.rightAxis
         let d = durationSet
         for i in 0..<d.count {
-            let dataEntry = BarChartDataEntry(x: Double(i), y: Double(d[i]))
+            let rounded = Double(round(100*d[i])/100)
+            let dataEntry = BarChartDataEntry(x: Double(i), y: rounded)
             dataEntries.append(dataEntry)
         }
         
@@ -258,7 +264,7 @@ class SleepViewController: UIViewController {
             for data in result as! [NSManagedObject] {
                 let interval = (data.value(forKey: "duration") as! Int)
                 let sleepTime = data.value(forKey: "sleepTime")
-                var doubleInt = 0.0
+                var doubleInt = 0.00
                 let minutes = (interval / 60) % 60
                 let hours = (interval / 3600)
                 

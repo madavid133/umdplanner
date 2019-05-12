@@ -309,14 +309,15 @@
                                 <rect key="frame" x="20" y="769" width="81" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="DpE-FU-fKu"/>
+                                    <constraint firstAttribute="width" constant="81" id="OBz-T8-XiG"/>
                                 </constraints>
-                                <state key="normal" title="Manual Add"/>
+                                <state key="normal" title="Add"/>
                                 <connections>
                                     <segue destination="kBS-Za-MA8" kind="show" id="9dU-6z-Olb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcd-OX-JEZ">
-                                <rect key="frame" x="329" y="769" width="65" height="30"/>
+                                <rect key="frame" x="287" y="769" width="107" height="30"/>
                                 <state key="normal" title="Summary"/>
                                 <connections>
                                     <segue destination="cIe-gc-Cyg" kind="show" id="2SB-MT-GMV"/>
@@ -334,7 +335,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="xPf-TA-Qec"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -357,6 +358,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRV-Ev-iJT">
                                 <rect key="frame" x="172" y="720" width="70" height="70"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="E5H-Rl-8cr"/>
                                     <constraint firstAttribute="height" constant="70" id="TuF-d4-PiX"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -370,12 +372,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gcd-OX-JEZ" firstAttribute="leading" secondItem="eRV-Ev-iJT" secondAttribute="trailing" constant="87" id="0wM-4S-JRI"/>
                             <constraint firstItem="AS9-l6-Air" firstAttribute="trailing" secondItem="2IL-GM-ySh" secondAttribute="trailing" constant="8" id="AAX-85-BdL"/>
                             <constraint firstItem="AS9-l6-Air" firstAttribute="trailing" secondItem="jEy-05-j18" secondAttribute="trailing" constant="8" id="Ehi-ID-vAN"/>
-                            <constraint firstItem="gcd-OX-JEZ" firstAttribute="leading" secondItem="LlE-an-d2b" secondAttribute="trailing" constant="228" id="Elm-74-dLm"/>
                             <constraint firstItem="AS9-l6-Air" firstAttribute="trailing" secondItem="gcd-OX-JEZ" secondAttribute="trailing" constant="20" id="Q0h-vF-MOP"/>
-                            <constraint firstItem="gcd-OX-JEZ" firstAttribute="leading" secondItem="LlE-an-d2b" secondAttribute="trailing" constant="228" id="SyO-Og-a06"/>
                             <constraint firstItem="2IL-GM-ySh" firstAttribute="leading" secondItem="AS9-l6-Air" secondAttribute="leading" constant="8" id="THO-qO-Tdb"/>
                             <constraint firstItem="gcd-OX-JEZ" firstAttribute="top" secondItem="Kcw-ua-9aN" secondAttribute="bottom" constant="64" id="UPt-Qc-FDp"/>
                             <constraint firstItem="WTi-WQ-BnA" firstAttribute="top" secondItem="2IL-GM-ySh" secondAttribute="bottom" constant="8" id="V6p-Pi-Dp3"/>
@@ -383,6 +382,7 @@
                             <constraint firstItem="AS9-l6-Air" firstAttribute="trailing" secondItem="WTi-WQ-BnA" secondAttribute="trailing" constant="8" id="clA-Tz-Xib"/>
                             <constraint firstItem="jEy-05-j18" firstAttribute="top" secondItem="WTi-WQ-BnA" secondAttribute="bottom" constant="8" id="dmB-Xm-1RN"/>
                             <constraint firstItem="eRV-Ev-iJT" firstAttribute="leading" secondItem="LlE-an-d2b" secondAttribute="trailing" constant="71" id="hmb-DT-LN3"/>
+                            <constraint firstItem="gcd-OX-JEZ" firstAttribute="leading" secondItem="eRV-Ev-iJT" secondAttribute="trailing" constant="45" id="icp-8r-MX5"/>
                             <constraint firstItem="AS9-l6-Air" firstAttribute="trailing" secondItem="Kcw-ua-9aN" secondAttribute="trailing" constant="8" id="j7L-KX-uV6"/>
                             <constraint firstItem="eRV-Ev-iJT" firstAttribute="top" secondItem="Kcw-ua-9aN" secondAttribute="bottom" constant="15" id="kOC-Yv-MtN"/>
                             <constraint firstItem="LlE-an-d2b" firstAttribute="top" secondItem="Kcw-ua-9aN" secondAttribute="bottom" constant="64" id="kdQ-Mg-iu0"/>
